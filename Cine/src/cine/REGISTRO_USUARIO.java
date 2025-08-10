@@ -8,14 +8,14 @@ package cine;
  *
  * @author david
  */
-public class Registro extends javax.swing.JFrame {
+public class REGISTRO_USUARIO extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Registro.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(REGISTRO_USUARIO.class.getName());
 
     /**
-     * Creates new form Registro
+     * Creates new form REGISTRO_USUARIO
      */
-    public Registro() {
+    public REGISTRO_USUARIO() {
         initComponents();
     }
 
@@ -32,23 +32,23 @@ public class Registro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Registros");
+        jLabel1.setText("FORMULARIO  DE REGISTRO ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(86, 86, 86)
-                .addComponent(jLabel1)
-                .addContainerGap(433, Short.MAX_VALUE))
+                .addGap(100, 100, 100)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jLabel1)
-                .addContainerGap(237, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(268, Short.MAX_VALUE))
         );
 
         pack();
@@ -76,7 +76,7 @@ public class Registro extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Registro().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new REGISTRO_USUARIO().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
