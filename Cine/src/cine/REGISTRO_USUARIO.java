@@ -30,8 +30,6 @@ public class REGISTRO_USUARIO extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jLabel1.setText("FORMULARIO  DE REGISTRO ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
