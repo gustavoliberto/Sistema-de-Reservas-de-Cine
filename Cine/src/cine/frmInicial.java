@@ -1,22 +1,21 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package cine;
 
 /**
  *
- * @author gusta
+ * @author david
  */
-public class frmNuevoPersonal extends javax.swing.JDialog {
+public class frmInicial extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmNuevoPersonal.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmInicial.class.getName());
 
     /**
-     * Creates new form frmNuevoPersonal
+     * Creates new form frmInicial
      */
-    public frmNuevoPersonal(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public frmInicial() {
         initComponents();
     }
 
@@ -30,23 +29,33 @@ public class frmNuevoPersonal extends javax.swing.JDialog {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("Db");
+        jButton1.setText("Nuevas Peliculas");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 357, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 139, -1, -1));
+
+        jButton2.setText("Nuevos usuarios");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
+
+        jButton3.setText("Llenar sala");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+        // TODO add your handling code here:
+        frmPeliculas peli = new frmPeliculas(this, true);
+        peli.show();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -70,23 +79,13 @@ public class frmNuevoPersonal extends javax.swing.JDialog {
         }
         //</editor-fold>
 
-        /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                frmNuevoPersonal dialog = new frmNuevoPersonal(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> new frmInicial().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     // End of variables declaration//GEN-END:variables
 }

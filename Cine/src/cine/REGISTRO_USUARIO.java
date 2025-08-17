@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package cine;
 
-/**
- *
- * @author david
- */
+import java.util.*;
+import javax.swing.JOptionPane;
+
 public class REGISTRO_USUARIO extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(REGISTRO_USUARIO.class.getName());
@@ -29,27 +24,110 @@ public class REGISTRO_USUARIO extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        txtnombres = new javax.swing.JTextField();
+        txtdoc = new javax.swing.JTextField();
+        txtnum = new javax.swing.JTextField();
+        btnprocesar = new javax.swing.JButton();
+        btnlimpiar = new javax.swing.JButton();
+        btnsalir = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        txtedad = new javax.swing.JTextField();
+
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("FORMULARIO  DE REGISTRO ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 515, 26));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(353, Short.MAX_VALUE))
-        );
+        jLabel3.setText("Nombres  y Apellidos ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 59, -1, -1));
+
+        jLabel4.setText("Doc De  identidad ");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 126, -1, -1));
+
+        jLabel5.setText("Número ");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 186, -1, -1));
+
+        txtnombres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnombresActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtnombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 56, 154, -1));
+
+        txtdoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdocActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtdoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 123, 154, -1));
+        getContentPane().add(txtnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 183, 154, -1));
+
+        btnprocesar.setText("PROCESAR");
+        btnprocesar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnprocesarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnprocesar, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 271, -1, -1));
+
+        btnlimpiar.setText("LIMPIAR");
+        btnlimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnlimpiarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnlimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 271, -1, -1));
+
+        btnsalir.setText("SALIR");
+        btnsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 271, -1, -1));
+
+        jLabel6.setText("Edad ");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 226, 66, -1));
+        getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 223, 154, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtnombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombresActionPerformed
+
+    }//GEN-LAST:event_txtnombresActionPerformed
+
+    private void txtdocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdocActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtdocActionPerformed
+
+    private void btnlimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlimpiarActionPerformed
+        // TODO add your handling code here:
+        Limpiar();
+    }//GEN-LAST:event_btnlimpiarActionPerformed
+
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void btnprocesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnprocesarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Datos guardados satisfactoriamente");
+    }//GEN-LAST:event_btnprocesarActionPerformed
+
+    public void Limpiar(){
+        this.txtnombres.setText("");
+        this.txtdoc.setText("");
+        this.txtedad.setText("");
+        this.txtnum.setText("");
+        
+        this.txtnombres.requestFocus();
+    }
     /**
      * @param args the command line arguments
      */
@@ -76,6 +154,17 @@ public class REGISTRO_USUARIO extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnlimpiar;
+    private javax.swing.JButton btnprocesar;
+    private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField txtdoc;
+    private javax.swing.JTextField txtedad;
+    private javax.swing.JTextField txtnombres;
+    private javax.swing.JTextField txtnum;
     // End of variables declaration//GEN-END:variables
 }
