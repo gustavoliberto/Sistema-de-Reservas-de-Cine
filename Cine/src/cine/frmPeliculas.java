@@ -75,17 +75,18 @@ public class frmPeliculas extends javax.swing.JDialog {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
 
         jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter()));
-        jPanel1.add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 100, -1));
+        jPanel1.add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 110, -1));
 
         jLabel5.setText("Duracción:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, -1, -1));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 100, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, -1, -1));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 180, -1));
 
         jLabel6.setText("Elegir la imagen:");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
 
-        lblImagen.setText("jLabel7");
-        jPanel1.add(lblImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 240, 250));
+        lblImagen.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblImagen.setText("Imagen");
+        jPanel1.add(lblImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 40, 200, 250));
 
         btnElegirImagen.setText("Examinar...");
         btnElegirImagen.addActionListener(new java.awt.event.ActionListener() {
@@ -93,16 +94,16 @@ public class frmPeliculas extends javax.swing.JDialog {
                 btnElegirImagenActionPerformed(evt);
             }
         });
-        jPanel1.add(btnElegirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, -1, -1));
+        jPanel1.add(btnElegirImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 110, -1));
 
         file1.setDialogTitle("Buscar Imagen");
         file1.setMultiSelectionEnabled(true);
         jPanel1.add(file1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 20, 10));
 
         btnGuardar.setText("Guardar");
-        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, -1, -1));
+        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 300, 180, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 820, 340));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 780, 340));
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
