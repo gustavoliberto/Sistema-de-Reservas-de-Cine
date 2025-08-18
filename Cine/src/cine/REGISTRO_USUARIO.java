@@ -115,10 +115,11 @@ public class REGISTRO_USUARIO extends javax.swing.JFrame {
         jLayeredPane1.add(btnsalir);
         btnsalir.setBounds(10, 400, 220, 30);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("FORMULARIO  DE REGISTRO ");
         jLayeredPane1.add(jLabel1);
-        jLabel1.setBounds(-10, 0, 210, 26);
+        jLabel1.setBounds(10, 0, 210, 26);
 
         jLayeredPane2.add(jLayeredPane1);
         jLayeredPane1.setBounds(10, 20, 230, 450);
