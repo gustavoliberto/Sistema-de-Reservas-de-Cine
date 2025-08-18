@@ -28,13 +28,24 @@ public class frmInicial extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 3));
+
+        jButton3.setText("Llenar sala");
+        jLayeredPane1.add(jButton3);
+        jButton3.setBounds(110, 110, 170, 50);
 
         jButton1.setText("Nuevas Peliculas");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -42,16 +53,42 @@ public class frmInicial extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, -1));
+        jLayeredPane1.add(jButton1);
+        jButton1.setBounds(110, 180, 170, 50);
 
         jButton2.setText("Nuevos usuarios");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
-
-        jButton3.setText("Llenar sala");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
+        jLayeredPane1.add(jButton2);
+        jButton2.setBounds(110, 250, 170, 50);
 
         btnSalir.setText("Salir");
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, -1));
+        jLayeredPane1.add(btnSalir);
+        btnSalir.setBounds(110, 320, 170, 40);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("PANEL DE CONTROL DE CINEMATRIX");
+        jLayeredPane1.add(jLabel1);
+        jLabel1.setBounds(0, 40, 570, 40);
+
+        jButton4.setText("Listado de reservas");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(jButton4);
+        jButton4.setBounds(300, 110, 160, 50);
+
+        jButton5.setText("Listado de usuarios");
+        jLayeredPane1.add(jButton5);
+        jButton5.setBounds(300, 250, 160, 50);
+
+        jButton6.setText("Listado de peliculas");
+        jLayeredPane1.add(jButton6);
+        jButton6.setBounds(300, 180, 160, 50);
+
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 570, 440));
+        jLayeredPane1.getAccessibleContext().setAccessibleName("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -61,6 +98,10 @@ public class frmInicial extends javax.swing.JFrame {
         frmPeliculas peli = new frmPeliculas(this, true);
         peli.show();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -92,5 +133,10 @@ public class frmInicial extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
 }

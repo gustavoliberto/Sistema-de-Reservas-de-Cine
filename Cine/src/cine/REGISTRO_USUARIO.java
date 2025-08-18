@@ -23,76 +23,110 @@ public class REGISTRO_USUARIO extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        jLayeredPane2 = new javax.swing.JLayeredPane();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         txtnombres = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
         txtdoc = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
         txtnum = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txtedad = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
         btnprocesar = new javax.swing.JButton();
         btnlimpiar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        txtedad = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("FORMULARIO  DE REGISTRO ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 515, 26));
-
-        jLabel3.setText("Nombres  y Apellidos ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 59, -1, -1));
-
-        jLabel4.setText("Doc De  identidad ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 126, -1, -1));
-
-        jLabel5.setText("Número ");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 186, -1, -1));
+        jLayeredPane2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
         txtnombres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtnombresActionPerformed(evt);
             }
         });
-        getContentPane().add(txtnombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 56, 154, -1));
+        jLayeredPane1.add(txtnombres);
+        txtnombres.setBounds(10, 62, 220, 30);
+
+        jLabel3.setText("Nombres  y Apellidos ");
+        jLayeredPane1.add(jLabel3);
+        jLabel3.setBounds(10, 40, 116, 20);
 
         txtdoc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtdocActionPerformed(evt);
             }
         });
-        getContentPane().add(txtdoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 123, 154, -1));
-        getContentPane().add(txtnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 183, 154, -1));
+        jLayeredPane1.add(txtdoc);
+        txtdoc.setBounds(10, 132, 220, 30);
 
-        btnprocesar.setText("PROCESAR");
+        jLabel4.setText("Doc De  identidad ");
+        jLayeredPane1.add(jLabel4);
+        jLabel4.setBounds(10, 110, 97, 16);
+        jLayeredPane1.add(txtnum);
+        txtnum.setBounds(10, 200, 220, 30);
+
+        jLabel5.setText("Número de documento");
+        jLayeredPane1.add(jLabel5);
+        jLabel5.setBounds(10, 180, 170, 16);
+        jLayeredPane1.add(txtedad);
+        txtedad.setBounds(10, 270, 220, 30);
+
+        jLabel6.setText("Edad ");
+        jLayeredPane1.add(jLabel6);
+        jLabel6.setBounds(10, 250, 66, 16);
+
+        btnprocesar.setBackground(new java.awt.Color(51, 51, 255));
+        btnprocesar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnprocesar.setForeground(new java.awt.Color(255, 255, 255));
+        btnprocesar.setText("REGISTRAR");
         btnprocesar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnprocesarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnprocesar, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 271, -1, -1));
+        jLayeredPane1.add(btnprocesar);
+        btnprocesar.setBounds(10, 320, 220, 30);
 
+        btnlimpiar.setBackground(new java.awt.Color(0, 255, 0));
+        btnlimpiar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnlimpiar.setForeground(new java.awt.Color(255, 255, 255));
         btnlimpiar.setText("LIMPIAR");
         btnlimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnlimpiarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnlimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 271, -1, -1));
+        jLayeredPane1.add(btnlimpiar);
+        btnlimpiar.setBounds(10, 360, 220, 30);
 
+        btnsalir.setBackground(new java.awt.Color(51, 51, 51));
+        btnsalir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnsalir.setForeground(new java.awt.Color(255, 255, 255));
         btnsalir.setText("SALIR");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 271, -1, -1));
+        jLayeredPane1.add(btnsalir);
+        btnsalir.setBounds(10, 400, 220, 30);
 
-        jLabel6.setText("Edad ");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 226, 66, -1));
-        getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 223, 154, -1));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("FORMULARIO  DE REGISTRO ");
+        jLayeredPane1.add(jLabel1);
+        jLabel1.setBounds(-10, 0, 210, 26);
+
+        jLayeredPane2.add(jLayeredPane1);
+        jLayeredPane1.setBounds(10, 20, 230, 450);
+
+        getContentPane().add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 250, 480));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/login_form_2.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 280, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -158,10 +192,13 @@ public class REGISTRO_USUARIO extends javax.swing.JFrame {
     private javax.swing.JButton btnprocesar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JTextField txtdoc;
     private javax.swing.JTextField txtedad;
     private javax.swing.JTextField txtnombres;
