@@ -200,7 +200,9 @@ public class frmInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNosotrosActionPerformed
 
     private void btnNuevoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoUsuarioActionPerformed
-        // TODO add your handling code here:
+        frmNuevoPersonal nuevoPersonal = new frmNuevoPersonal(this, true);
+        nuevoPersonal.setVisible(true); // Mostrar la ventana de asientos
+        this.dispose(); // Cerrar la ventana de login
     }//GEN-LAST:event_btnNuevoUsuarioActionPerformed
 
     /**
