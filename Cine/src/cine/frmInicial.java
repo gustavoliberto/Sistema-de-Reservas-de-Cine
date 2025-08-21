@@ -28,15 +28,64 @@ public class frmInicial extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        menuBar1 = new java.awt.MenuBar();
+        menu1 = new java.awt.Menu();
+        menu2 = new java.awt.Menu();
+        menuBar2 = new java.awt.MenuBar();
+        menu3 = new java.awt.Menu();
+        menu4 = new java.awt.Menu();
+        menuBar3 = new java.awt.MenuBar();
+        menu5 = new java.awt.Menu();
+        menu6 = new java.awt.Menu();
+        popupMenu1 = new java.awt.PopupMenu();
+        menuBar4 = new java.awt.MenuBar();
+        menu7 = new java.awt.Menu();
+        menu8 = new java.awt.Menu();
+        menuBar5 = new java.awt.MenuBar();
+        menu9 = new java.awt.Menu();
+        menu10 = new java.awt.Menu();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        btnNuevoUsuario = new javax.swing.JButton();
+        btnNosotros = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        btnNuevoUsuario = new javax.swing.JButton();
+
+        menu1.setLabel("File");
+        menuBar1.add(menu1);
+
+        menu2.setLabel("Edit");
+        menuBar1.add(menu2);
+
+        menu3.setLabel("File");
+        menuBar2.add(menu3);
+
+        menu4.setLabel("Edit");
+        menuBar2.add(menu4);
+
+        menu5.setLabel("File");
+        menuBar3.add(menu5);
+
+        menu6.setLabel("Edit");
+        menuBar3.add(menu6);
+
+        popupMenu1.setLabel("popupMenu1");
+
+        menu7.setLabel("File");
+        menuBar4.add(menu7);
+
+        menu8.setLabel("Edit");
+        menuBar4.add(menu8);
+
+        menu9.setLabel("File");
+        menuBar5.add(menu9);
+
+        menu10.setLabel("Edit");
+        menuBar5.add(menu10);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(820, 640));
@@ -66,16 +115,16 @@ public class frmInicial extends javax.swing.JFrame {
         jLayeredPane1.add(jButton1);
         jButton1.setBounds(110, 180, 170, 50);
 
-        btnNuevoUsuario.setBackground(new java.awt.Color(0, 153, 153));
-        btnNuevoUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        btnNuevoUsuario.setText("Nuevos usuarios");
-        btnNuevoUsuario.addActionListener(new java.awt.event.ActionListener() {
+        btnNosotros.setBackground(new java.awt.Color(51, 204, 0));
+        btnNosotros.setForeground(new java.awt.Color(255, 255, 255));
+        btnNosotros.setText("Nosotros");
+        btnNosotros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNuevoUsuarioActionPerformed(evt);
+                btnNosotrosActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(btnNuevoUsuario);
-        btnNuevoUsuario.setBounds(110, 250, 170, 50);
+        jLayeredPane1.add(btnNosotros);
+        btnNosotros.setBounds(110, 320, 170, 50);
 
         btnSalir.setBackground(new java.awt.Color(255, 0, 0));
         btnSalir.setForeground(new java.awt.Color(255, 255, 255));
@@ -111,7 +160,18 @@ public class frmInicial extends javax.swing.JFrame {
         jLayeredPane1.add(jLabel1);
         jLabel1.setBounds(0, 20, 570, 40);
 
-        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 570, 470));
+        btnNuevoUsuario.setBackground(new java.awt.Color(0, 153, 153));
+        btnNuevoUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        btnNuevoUsuario.setText("Nuevos usuarios");
+        btnNuevoUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoUsuarioActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(btnNuevoUsuario);
+        btnNuevoUsuario.setBounds(110, 250, 170, 50);
+
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 570, 470));
         jLayeredPane1.getAccessibleContext().setAccessibleName("");
 
         pack();
@@ -133,10 +193,14 @@ public class frmInicial extends javax.swing.JFrame {
         this.dispose(); // Cerrar la ventana de login
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void btnNosotrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNosotrosActionPerformed
+        Nosotros nosotrosEquipo = new Nosotros(this, true);
+        nosotrosEquipo.setVisible(true); // Mostrar la ventana de asientos
+        this.dispose(); // Cerrar la ventana de login
+    }//GEN-LAST:event_btnNosotrosActionPerformed
+
     private void btnNuevoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoUsuarioActionPerformed
-        /*frmNuevoPersonal nuevoPersonal = new frmNuevoPersonal();
-        nuevoPersonal.setVisible(true); // Mostrar la ventana de asientos
-        this.dispose(); // Cerrar la ventana de login*/
+        // TODO add your handling code here:
     }//GEN-LAST:event_btnNuevoUsuarioActionPerformed
 
     /**
@@ -165,6 +229,7 @@ public class frmInicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnNosotros;
     private javax.swing.JButton btnNuevoUsuario;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton jButton1;
@@ -174,5 +239,21 @@ public class frmInicial extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private java.awt.Menu menu1;
+    private java.awt.Menu menu10;
+    private java.awt.Menu menu2;
+    private java.awt.Menu menu3;
+    private java.awt.Menu menu4;
+    private java.awt.Menu menu5;
+    private java.awt.Menu menu6;
+    private java.awt.Menu menu7;
+    private java.awt.Menu menu8;
+    private java.awt.Menu menu9;
+    private java.awt.MenuBar menuBar1;
+    private java.awt.MenuBar menuBar2;
+    private java.awt.MenuBar menuBar3;
+    private java.awt.MenuBar menuBar4;
+    private java.awt.MenuBar menuBar5;
+    private java.awt.PopupMenu popupMenu1;
     // End of variables declaration//GEN-END:variables
 }
