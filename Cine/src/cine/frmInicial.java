@@ -31,18 +31,21 @@ public class frmInicial extends javax.swing.JFrame {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnNuevoUsuario = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(820, 640));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204), 3));
 
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Llenar sala");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,6 +55,8 @@ public class frmInicial extends javax.swing.JFrame {
         jLayeredPane1.add(jButton3);
         jButton3.setBounds(110, 110, 170, 50);
 
+        jButton1.setBackground(new java.awt.Color(102, 102, 255));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Nuevas Peliculas");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,20 +66,25 @@ public class frmInicial extends javax.swing.JFrame {
         jLayeredPane1.add(jButton1);
         jButton1.setBounds(110, 180, 170, 50);
 
-        jButton2.setText("Nuevos usuarios");
-        jLayeredPane1.add(jButton2);
-        jButton2.setBounds(110, 250, 170, 50);
+        btnNuevoUsuario.setBackground(new java.awt.Color(0, 153, 153));
+        btnNuevoUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        btnNuevoUsuario.setText("Nuevos usuarios");
+        btnNuevoUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoUsuarioActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(btnNuevoUsuario);
+        btnNuevoUsuario.setBounds(110, 250, 170, 50);
 
+        btnSalir.setBackground(new java.awt.Color(255, 0, 0));
+        btnSalir.setForeground(new java.awt.Color(255, 255, 255));
         btnSalir.setText("Salir");
         jLayeredPane1.add(btnSalir);
-        btnSalir.setBounds(110, 320, 170, 40);
+        btnSalir.setBounds(380, 410, 170, 40);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PANEL DE CONTROL DE CINEMATRIX");
-        jLayeredPane1.add(jLabel1);
-        jLabel1.setBounds(0, 40, 570, 40);
-
+        jButton4.setBackground(new java.awt.Color(102, 102, 102));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Listado de reservas");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,15 +94,24 @@ public class frmInicial extends javax.swing.JFrame {
         jLayeredPane1.add(jButton4);
         jButton4.setBounds(300, 110, 160, 50);
 
+        jButton5.setBackground(new java.awt.Color(51, 51, 51));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Listado de usuarios");
         jLayeredPane1.add(jButton5);
         jButton5.setBounds(300, 250, 160, 50);
 
+        jButton6.setBackground(new java.awt.Color(204, 255, 102));
         jButton6.setText("Listado de peliculas");
         jLayeredPane1.add(jButton6);
         jButton6.setBounds(300, 180, 160, 50);
 
-        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 570, 440));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("PANEL DE CONTROL DE CINEMATRIX");
+        jLayeredPane1.add(jLabel1);
+        jLabel1.setBounds(0, 20, 570, 40);
+
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 570, 470));
         jLayeredPane1.getAccessibleContext().setAccessibleName("");
 
         pack();
@@ -113,6 +132,12 @@ public class frmInicial extends javax.swing.JFrame {
         reservaAsiento.setVisible(true); // Mostrar la ventana de asientos
         this.dispose(); // Cerrar la ventana de login
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void btnNuevoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoUsuarioActionPerformed
+        /*frmNuevoPersonal nuevoPersonal = new frmNuevoPersonal();
+        nuevoPersonal.setVisible(true); // Mostrar la ventana de asientos
+        this.dispose(); // Cerrar la ventana de login*/
+    }//GEN-LAST:event_btnNuevoUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,9 +165,9 @@ public class frmInicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnNuevoUsuario;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
